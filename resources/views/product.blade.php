@@ -84,7 +84,8 @@
                     <p class="font-medium">
                         The story revolves around high school students Taki Tachibana and Mitsuha Miyamizu. Despite
                         never having met, they suddenly begin to swap bodies, leading to chaos in each other’s
-                        lives. </p>
+                        lives. 
+                    </p>
                 </div>
             </div>
         </div>

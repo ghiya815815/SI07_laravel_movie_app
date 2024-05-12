@@ -6,7 +6,7 @@
         <!-- Breadcrumb Start -->
         <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <h2 class="text-title-md2 font-bold text-black dark:text-white">
-                Tables
+                GENRE | data table 
             </h2>
 
             <nav>
@@ -28,7 +28,7 @@
                         <p class="font-medium">ID</p>
                     </div>
                     <div class="col-span-2 flex items-center ">
-                        <p class="font-medium">Name</p>
+                        <p class="font-medium">Name </p>
                     </div>
                     <div class="col-span-4 flex items-center">
                         <p class="font-medium">Descriptions</p>
