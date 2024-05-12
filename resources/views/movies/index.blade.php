@@ -80,7 +80,7 @@
                     </div>
                     <div class="col-span-1 items-center sm:flex">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            Drama
+                            Actions
                         </p>
                     </div>
                     <div class="col-span-3 flex items-center">
@@ -115,6 +115,63 @@
                         <p class="text-sm font-medium text-black dark:text-white">
                             Haruka Sakura wants nothing to do with weaklings—he's only interested in the strongest of the strong.
                         </p>
+                    </div>
+                    <div class="col-span-1 flex items-center">
+                        <div class="flex items-center space-x-1">
+                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
+                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
+                    <div class="col-span-3 flex items-center">
+                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+                            <div class="w-12 rounded-md">
+                                <img src="src/images/movie/movie-04.jpg" alt="Product" />
+                            </div>
+                            <p class="text-sm font-medium text-black dark:text-white">
+                            Spy X Family
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-span-1 items-center sm:flex">
+                        <p class="text-sm font-medium text-black dark:text-white">
+                            Actions
+                        </p>
+                    </div>
+                    <div class="col-span-3 flex items-center">
+                        <p class="text-sm font-medium text-black dark:text-white">
+                        Corrupt politicians, frenzied nationalists and other seditious forces continue to jeopardize the
+                        thin veneer of peace.                        </p>
+                    </div>
+                    <div class="col-span-1 flex items-center">
+                        <div class="flex items-center space-x-1">
+                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
+                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
+                    <div class="col-span-3 flex items-center">
+                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+                            <div class="w-12 rounded-md">
+                                <img src="src/images/movie/movie-05.jpg" alt="Product" />
+                            </div>
+                            <p class="text-sm font-medium text-black dark:text-white">
+                            Kiminonawa
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-span-1 items-center sm:flex">
+                        <p class="text-sm font-medium text-black dark:text-white">
+                            Drama
+                        </p>
+                    </div>
+                    <div class="col-span-3 flex items-center">
+                        <p class="text-sm font-medium text-black dark:text-white">
+                        The story revolves around high school students Taki Tachibana and Mitsuha Miyamizu. Despite
+                        never having met, they suddenly begin to swap bodies, leading to chaos in each other’s
+                        lives.                       </p>
                     </div>
                     <div class="col-span-1 flex items-center">
                         <div class="flex items-center space-x-1">
