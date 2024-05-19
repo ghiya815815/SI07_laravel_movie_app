@@ -6,11 +6,11 @@
         <!-- Breadcrumb Start -->
         <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <h2 class="text-title-md2 font-bold text-black dark:text-white">
-                GENRE | data table 
+                GENRE | data table
             </h2>
 
             <nav>
-                <a href="/movies/create"
+                <a href="/genres/create"
                     class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                     Create
                 </a>
@@ -24,9 +24,7 @@
             <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                 <div
                     class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <p class="font-medium">ID</p>
-                    </div>
+
                     <div class="col-span-2 flex items-center ">
                         <p class="font-medium">Name </p>
                     </div>
@@ -38,153 +36,30 @@
                     </div>
                 </div>
 
-                <div
-                    class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                                1
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-2  flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Jojo Bizarre Adventure
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Jojo's Bizarre Adventure is a story about the Joestar family, who are possessed with intense
-                            psychic strength.
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                                2
-                            </div>
+                @foreach ($genres as $genre)
+                    <div
+                        class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
 
+                        <div class="col-span-2  flex items-center">
+                            <p class="text-sm font-medium text-black dark:text-white">
+                            {{  $genre['name'] }}
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Drama
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Noragami is an anime series that follows a poor deity named Yato, who desires to become a
-                            famous god.
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
+                        <div class="col-span-4 flex items-center">
+                            <p class="text-sm font-medium text-black dark:text-white">
+                            {{  $genre['descriptions'] }}
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                                3
+                        <div class="col-span-1 flex items-center">
+                            <div class="flex items-center space-x-1">
+                                <a href=""
+                                    class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
+                                <a href=""
+                                    class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Wind Breaker
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Haruka Sakura wants nothing to do with weaklings—he's only interested in the strongest of
-                            the strong.
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                                4
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Spy X Family
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Corrupt politicians, frenzied nationalists and other seditious forces continue to jeopardize
-                            the thin veneer of peace.
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                                5
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            Kiminonawa
-                        </p>
-                    </div>
-                    <div class="col-span-4 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            The story revolves around high school students Taki Tachibana and Mitsuha Miyamizu. Despite
-                            never having met, they suddenly begin to swap bodies, leading to chaos in each other’s
-                            lives. 
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                            <a href=""
-                                class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
 
             <!-- ====== Table Two End -->
