@@ -42,12 +42,12 @@
 
                         <div class="col-span-2  flex items-center">
                             <p class="text-sm font-medium text-black dark:text-white">
-                            {{  $genre['name'] }}
+                            {{ $genre->name }}
                             </p>
                         </div>
                         <div class="col-span-4 flex items-center">
                             <p class="text-sm font-medium text-black dark:text-white">
-                            {{  $genre['descriptions'] }}
+                            {{ $genre->description }}
                             </p>
                         </div>
                         <div class="col-span-1 flex items-center">
