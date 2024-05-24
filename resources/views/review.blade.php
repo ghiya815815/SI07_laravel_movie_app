@@ -50,7 +50,7 @@
                                     <img src="src/images/movie/{{ $review->poster }}" alt="Product" />
                                 </div>
                                 <p class="text-sm font-medium text-black dark:text-white">
-                                {{ $review->title }}
+                                {{ $review->movie->title }}
                                 </p>
                                 </div>
                             </div>
