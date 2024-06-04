@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('poster');
             $table->string('user');
             $table->string('rate');
-            $table->text('date')->nullable();
+            $table->date('date')->nullable();
             $table->timestamps();
         });
     }
