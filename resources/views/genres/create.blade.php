@@ -61,12 +61,12 @@
                         @csrf
                         <div class="p-6.5">
                             <div class="mb-4.5">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Nama Genre <span class="text-meta-1">*</span> </label>
+                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Name Genre <span class="text-meta-1">*</span> </label>
                                 <input
                                     id="name"
                                     name="name"
                                     type="text"
-                                    placeholder="Enter anime movie title"
+                                    placeholder="Enter anime title"
                                     class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                                 />
                             </div>
@@ -78,7 +78,7 @@
                                     id="description"
                                     name="description"
                                     rows="6"
-                                    placeholder="Enter the description"
+                                    placeholder="Type anime description"
                                     class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                                 ></textarea>
                             </div>
