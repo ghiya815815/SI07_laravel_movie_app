@@ -19,7 +19,7 @@ class ReviewSeeder extends Seeder
             'poster' => 'movie-01.jpg',
             'user' => '3k',
             'rate' => '5/5',
-            'date' => '1/3/2004',
+            'date' => '2004-1-1',
         ]);
         
         Review::create([
@@ -28,7 +28,7 @@ class ReviewSeeder extends Seeder
             'poster' => 'movie-02.jpg',
             'user' => '2k',
             'rate' => '3/5',
-            'date' => '2/3/2014',
+            'date' => '2004-1-1',
         ]);
 
         Review::create([
@@ -37,7 +37,7 @@ class ReviewSeeder extends Seeder
             'poster' => 'movie-03.jpg',
             'user' => '5k',
             'rate' => '4/5',
-            'date' => '10/3/2012',
+            'date' => '2004-1-1',
         ]);
 
         Review::create([
@@ -46,7 +46,7 @@ class ReviewSeeder extends Seeder
             'poster' => 'movie-04.jpg',
             'user' => '1M',
             'rate' => '5/5',
-            'date' => '24/5/2022',
+            'date' => '2004-1-1',
         ]);
 
         Review::create([
@@ -55,7 +55,7 @@ class ReviewSeeder extends Seeder
             'poster' => 'movie-05.jpg',
             'user' => '5M',
             'rate' => '5/5',
-            'date' => '17/8/2020',
+            'date' => '2004-1-1',
         ]);
 
 

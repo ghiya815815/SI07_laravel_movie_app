@@ -5,7 +5,7 @@
     <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
         <!-- Breadcrumb Start -->
         <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <h2 class="text-title-md2 font-bold text-black dark:text-white">
+            <h2 class="text-title-md2 font-bold text-black">
                 Form Data
             </h2>
         </div>
@@ -13,7 +13,7 @@
 
         @if ($errors->any())
             <div
-                class="flex w-full border-l-6 border-[#F87171] bg-[#F87171] bg-opacity-[15%] my-4 px-7 py-6 shadow-md dark:bg-[#1B1B24] dark:bg-opacity-30">
+                class="flex w-full border-l-6 border-[#F87171] bg-[#F87171] bg-opacity-[15%] my-4 px-7 py-6 shadow-md">
                 <div class="mr-5 flex h-9 w-full max-w-[36px] items-center justify-center rounded-lg bg-[#F87171]">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -41,9 +41,9 @@
             <div class="flex flex-col">
                 <!-- Contact Form -->
                 <div
-                    class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-                    <div class="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
-                        <h3 class="font-medium text-black dark:text-white">
+                    class="rounded-sm border border-stroke bg-white shadow-default">
+                    <div class="border-b border-stroke px-6.5 py-4">
+                        <h3 class="font-medium text-black">
                             Review Form
                         </h3>
                     </div>
@@ -52,38 +52,38 @@
                         @method('PUT')
                         <div class="p-6.5">
                             <div class="mb-4.5">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Name Anime
+                                <label class="mb-3 block text-sm font-medium text-black"> Name Anime
                                     <span class="text-meta-1">*</span> </label>
                                 <input id="movie_id" name="movie_id" type="text" placeholder="Enter anime title"
-                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary" />
+                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter" />
                             </div>
 
                             <div class="mb-4.5">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Poster <span 
+                                <label class="mb-3 block text-sm font-medium text-black"> Poster <span 
                                 class="text-meta-1">*</span> </label>
                                 <input id="poster" name="poster" type="text" placeholder="Enter poster link"
-                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary" />
+                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter" />
                             </div>
 
                             <div class="mb-6">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> User <span
+                                <label class="mb-3 block text-sm font-medium text-black"> User <span
                                         class="text-meta-1">*</span> </label>
                                 <textarea id="user" name="user" value="{{$review->user}}"type="text" placeholder="100k"
-                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"></textarea>
+                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter"></textarea>
                             </div>
 
                             <div class="mb-4.5">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Rate <span
+                                <label class="mb-3 block text-sm font-medium text-black"> Rate <span
                                         class="text-meta-1">*</span> </label>
                                 <input id="rate" name="rate" value="{{$review->rate}}"type="text" placeholder="../5"
-                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary" />
+                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter" />
                             </div>
 
                             <div class="mb-6">
-                                <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Date <span
+                                <label class="mb-3 block text-sm font-medium text-black"> Date <span
                                         class="text-meta-1">*</span> </label>
-                                <textarea id="date" name="date" value="{{$review->date}}" type="text" placeholder="23/6/2025"
-                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"></textarea>
+                                        <input id="date" name="date" value="{{$review->date}}"type="date" placeholder="../5"
+                                    class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter" />
                             </div>
 
                             <button type="submit"
