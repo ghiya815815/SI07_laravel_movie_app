@@ -57,7 +57,7 @@
                             Movie Form
                         </h3>
                     </div>
-                    <form action="/movies" method="POST">
+                    <form enctype="multipart/form-data" action="/movies" method="POST">
                         @csrf
                         <div class="p-6.5">
                             <div class="mb-4.5">
@@ -111,7 +111,7 @@
                                 <input
                                     id="poster"
                                     name="poster"
-                                    type="text"
+                                    type="file"
                                     placeholder="Enter poster link"
                                     class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter"
                                 />

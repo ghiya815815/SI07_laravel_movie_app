@@ -47,7 +47,7 @@
                             Review Form
                         </h3>
                     </div>
-                    <form action="/reviews" method="POST">
+                    <form enctype="multipart/form-data" action="/reviews" method="POST">
                         @csrf
                         <div class="p-6.5">
 
@@ -83,7 +83,7 @@
                             <div class="mb-4.5">
                                 <label class="mb-3 block text-sm font-medium text-black"> Poster <span
                                         class="text-meta-1">*</span></label>
-                                <input id="poster" name="poster" type="text" placeholder="Enter poster link"
+                                <input id="poster" name="poster" type="file" placeholder="Enter poster link"
                                     class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter" />
                             </div>
 

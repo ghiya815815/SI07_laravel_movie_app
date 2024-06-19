@@ -65,7 +65,7 @@
                         <div class="col-span-2  flex items-center">
                             <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                                 <div class="w-12 rounded-md">
-                                    <img src="src/images/movie/{{ $review->poster }}" alt="Product" />
+                                    <img src="src/images/reviews/{{ $review->poster }}" alt="Product" />
                                 </div>
                                 <p class="text-sm font-medium text-black">
                                     {{ $review->movie->title }}

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Review;
 use App\Models\Movie;
+use Illuminate\Support\Facades\Storage;
 
 class ReviewController extends Controller
 {
@@ -27,10 +28,16 @@ class ReviewController extends Controller
             'movie_id' => 'required',
             'user' => 'required',
             'rate' => 'required',
-            'poster' => 'required',
+            'poster' => 'required|image',
             'date' => 'required',
 
         ]);
+
+        if ($request->hasFile('poster')) {
+            $imageName = time() .'.'.$request->file('poster')->getClientOriginalExtension();
+            $request->file('poster')->storeAs('src/images/reviews', $imageName, 'public');
+            $validatedData['poster'] = $imageName;
+        }
 
         Review::create($validatedData);
 
@@ -49,9 +56,19 @@ class ReviewController extends Controller
             'movie_id' => 'required',
             'user' => 'required',
             'rate' => 'required',
-            'poster' => 'required',
+            'poster' => 'nullable|image',
             'date' => 'required',
         ]);
+
+        if ($request->hasFile('poster')) {
+            // Delete the old image
+            Storage::disk('public')->delete('/src/images/reviews' . $review->poster);
+
+            // Upload the new image
+            $imageName = time() . '.' . $request->file('poster')->getClientOriginalExtension();
+            $request->file('poster')->storeAs('/src/images/reviews', $imageName, 'public');
+            $validatedData['poster'] = $imageName;
+        }
 
         $review->update($validatedData);
 
@@ -60,7 +77,10 @@ class ReviewController extends Controller
 
     public function destroy(Review $review)
     {
-        $review->delete();
+
+        $poster = Storage::disk('public')->delete('src/images/reviews/' . $review->poster);
+
+        $review->delete($poster);
         return redirect('/reviews')->with('success', 'review deleted successfully!');
     }
 }
